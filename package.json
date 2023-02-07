@@ -1,18 +1,8 @@
 {
-  "name": "react-intl-tel-input",
-  "version": "0.0.0",
+  "name": "react17-intl-tel-input",
+  "version": "0.0.1",
   "description": "Telephone input component. Rewrite intl-tel-input in React.js.",
-  "author": "patw",
-  "workspaces": [
-    "website"
-  ],
-  "contributors": [
-    {
-      "name": "Marc Cataford",
-      "email": "mcat@riseup.net",
-      "url": "https://mcataford.github.io"
-    }
-  ],
+  "author": "Jake",
   "keywords": [
     "react",
     "react-component",
@@ -22,18 +12,11 @@
     "international-telephone-input",
     "phonenumber"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/patw0929/react-intl-tel-input"
-  },
-  "bugs": {
-    "url": "https://github.com/patw0929/react-intl-tel-input/issues"
-  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "react": ">15.4.2 <17.0.0",
-    "react-dom": ">15.4.2 <17.0.0"
+    "react": ">15.4.2",
+    "react-dom": ">15.4.2"
   },
   "files": [
     "dist/**/*"
@@ -57,10 +40,11 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jquery": "^3.5.6",
     "@types/node": "^14.0.13",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
@@ -69,7 +53,6 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.21",
     "coveralls": "^2.11.9",
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "~17.1.0",
     "eslint-config-airbnb-base": "~13.1.0",
@@ -90,8 +73,8 @@
     "packwatch": "^1.0.0",
     "prettier": "^1.14.2",
     "prettier-eslint": "^9.0.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rimraf": "2.5.4",
     "sass": "^1.37.4",
     "semantic-release": "^17.0.4",
@@ -126,12 +109,6 @@
     "src/**/*.js": [
       "yarn run test -- --bail --findRelatedTests"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "prettier": {
     "semi": false,
